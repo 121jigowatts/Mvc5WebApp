@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc5WebApp.UI", "Mvc5WebApp.UI\Mvc5WebApp.UI.csproj", "{854BDDD9-8AFA-41BF-98DE-40C0DA8E27E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc5WebApp.Tests", "Mvc5WebApp.Tests\Mvc5WebApp.Tests.csproj", "{83D633E0-0CDA-455C-9819-53B308F7685F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc5WebApp.ServiceInterfaces", "Mvc5WebApp.ServiceInterfaces\Mvc5WebApp.ServiceInterfaces.csproj", "{82653D44-3BC0-4B04-96AA-77006A953F6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc5WebApp.ServiceImplementations", "Mvc5WebApp.ServiceImplementations\Mvc5WebApp.ServiceImplementations.csproj", "{E9F25D0C-2A77-48E6-99F9-FE6B6EC8F59D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc5WebApp.RepositoryInterfaces", "Mvc5WebApp.RepositoryInterfaces\Mvc5WebApp.RepositoryInterfaces.csproj", "{9A6C7058-42A1-49C2-894E-7D55F92D89B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc5WebApp.SQLServerRepositories", "Mvc5WebApp.SQLServerRepositories\Mvc5WebApp.SQLServerRepositories.csproj", "{7A2173FF-DEAF-4962-9629-45B2447F18AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{854BDDD9-8AFA-41BF-98DE-40C0DA8E27E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{854BDDD9-8AFA-41BF-98DE-40C0DA8E27E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{854BDDD9-8AFA-41BF-98DE-40C0DA8E27E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{854BDDD9-8AFA-41BF-98DE-40C0DA8E27E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83D633E0-0CDA-455C-9819-53B308F7685F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83D633E0-0CDA-455C-9819-53B308F7685F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83D633E0-0CDA-455C-9819-53B308F7685F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83D633E0-0CDA-455C-9819-53B308F7685F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82653D44-3BC0-4B04-96AA-77006A953F6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82653D44-3BC0-4B04-96AA-77006A953F6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82653D44-3BC0-4B04-96AA-77006A953F6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82653D44-3BC0-4B04-96AA-77006A953F6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9F25D0C-2A77-48E6-99F9-FE6B6EC8F59D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9F25D0C-2A77-48E6-99F9-FE6B6EC8F59D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9F25D0C-2A77-48E6-99F9-FE6B6EC8F59D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9F25D0C-2A77-48E6-99F9-FE6B6EC8F59D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A6C7058-42A1-49C2-894E-7D55F92D89B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A6C7058-42A1-49C2-894E-7D55F92D89B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A6C7058-42A1-49C2-894E-7D55F92D89B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A6C7058-42A1-49C2-894E-7D55F92D89B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A2173FF-DEAF-4962-9629-45B2447F18AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A2173FF-DEAF-4962-9629-45B2447F18AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A2173FF-DEAF-4962-9629-45B2447F18AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A2173FF-DEAF-4962-9629-45B2447F18AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
