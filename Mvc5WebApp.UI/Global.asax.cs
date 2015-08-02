@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Mvc5WebApp.MapperAutoMapper;
+using Mvc5WebApp.UI.ViewModels.People;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -16,6 +18,9 @@ namespace Mvc5WebApp.UI
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            AutoMapperRepositoryConfiguration.Configure();
         }
+        
     }
 }
