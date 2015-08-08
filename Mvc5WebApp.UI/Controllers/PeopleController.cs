@@ -29,8 +29,9 @@ namespace Mvc5WebApp.UI.Controllers
         // GET: People/Details/5
         public ActionResult Details(int id)
         {
-            //PeopleDetailViewModel model = _mapper.Map<PeopleDetailViewModel>(_service.GetById(id));
-            return View();
+            var model = _service.GetById(id);
+            return View(model);
+
         }
 
         // GET: People/Create

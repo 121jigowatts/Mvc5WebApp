@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 using Mvc5WebApp.Contracts;
 using Mapper = AutoMapper.Mapper;
+using Mvc5WebApp.UI.ViewModels.People;
 
 namespace Mvc5WebApp.MapperAutoMapper
 {
@@ -20,7 +21,7 @@ namespace Mvc5WebApp.MapperAutoMapper
 
         private static void ConfigureUserMapping()
         {
-            //Mapper.CreateMap<SQLServerRepositories.Database.Person, Models.Person>();
+            Mapper.CreateMap<Models.Person, PersonViewModel>();
         }
 
         public TDestination Map<TDestination>(object source)

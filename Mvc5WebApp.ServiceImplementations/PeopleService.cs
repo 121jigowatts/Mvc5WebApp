@@ -29,9 +29,11 @@ namespace Mvc5WebApp.ServiceImplementations
         }
 
 
-        public Person GetById(int id)
+        public PersonViewModel GetById(int id)
         {
-            return _repository.GetById(id);
+            var person = _repository.GetById(id);
+            var model = _mapper.Map<PersonViewModel>(person);
+            return model;
         }
     }
 }

@@ -43,9 +43,15 @@ namespace Mvc5WebApp.SQLServerRepositories
                 var query = from x in context.People
                             where x.ID == id
                             select x;
-
-                var person = _mapper.Map<Models.Person>(query.DefaultIfEmpty());
-                return person;
+                
+                if (query.Count() == 1) 
+                {
+                    var result = query.SingleOrDefault();
+                    var person = _mapper.Map<Models.Person>(result);
+                    return person;
+                }
+                
+                return new Models.Person();
                
             }
         }

@@ -8,6 +8,7 @@
 
 <table>
     <tr>
+        <th></th>
         <th>ID</th>
         <th>Name</th>
         <th>PhoneNumber</th>
@@ -15,6 +16,11 @@
 @foreach (var item in @Model.People)
 {
     <tr>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |            
+            @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+        </td>
         <td><span>@item.ID</span></td>
         <td><span>@item.Name</span></td>
         <td><span>@item.PhoneNumber</span></td>

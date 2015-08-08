@@ -12,6 +12,6 @@ namespace Mvc5WebApp.ServiceInterfaces
     {
         PeopleViewModel Get();
 
-        Person GetById(int id);
+        PersonViewModel GetById(int id);
     }
 }

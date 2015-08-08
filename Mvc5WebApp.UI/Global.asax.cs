@@ -18,6 +18,7 @@ namespace Mvc5WebApp.UI
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
+            AutoMapperServicesConfiguration.Configure();
             AutoMapperRepositoryConfiguration.Configure();
         }
         
