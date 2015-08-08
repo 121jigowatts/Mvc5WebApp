@@ -34,5 +34,23 @@ namespace Mvc5WebApp.SQLServerRepositories
             }
             
         }
+
+
+        public Models.Person GetById(int id)
+        {
+            using (var context = new EFContext())
+            {
+                var query = from x in context.People
+                            where x.ID == id
+                            select x;
+
+                var person = _mapper.Map<Models.Person>(query.DefaultIfEmpty());
+                return person;
+               
+            }
+        }
+
+
+
     }
 }

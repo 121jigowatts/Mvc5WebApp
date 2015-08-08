@@ -10,5 +10,7 @@ namespace Mvc5WebApp.RepositoryInterfaces
     public interface IPeopleRepository
     {
         IList<Person> Get();
+
+        Person GetById(int id);
     }
 }

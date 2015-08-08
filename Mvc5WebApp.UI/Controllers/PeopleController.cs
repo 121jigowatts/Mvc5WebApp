@@ -1,5 +1,5 @@
-﻿using Mvc5WebApp.ServiceInterfaces;
-using Mvc5WebApp.UI.ViewModels.People;
+﻿using Mvc5WebApp.Contracts;
+using Mvc5WebApp.ServiceInterfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,24 +11,25 @@ namespace Mvc5WebApp.UI.Controllers
     public class PeopleController : Controller
     {
         private readonly IPeopleService _service;
-        public PeopleController(IPeopleService service) 
+        private readonly IObjectMapper _mapper;
+        public PeopleController(IPeopleService service, IObjectMapper mapper) 
         {
             this._service = service;
+            this._mapper = mapper;
         }
 
 
         // GET: People
         public ActionResult Index()
         {
-            var model = new PeopleViewModel();
-            model.People = _service.Get();
-            
+            var model = _service.Get();            
             return View(model);
         }
 
         // GET: People/Details/5
         public ActionResult Details(int id)
         {
+            //PeopleDetailViewModel model = _mapper.Map<PeopleDetailViewModel>(_service.GetById(id));
             return View();
         }
 
