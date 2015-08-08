@@ -1,5 +1,4 @@
 ﻿using Mvc5WebApp.MapperAutoMapper;
-using Mvc5WebApp.UI.ViewModels.People;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +18,7 @@ namespace Mvc5WebApp.UI
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
+            AutoMapperServicesConfiguration.Configure();
             AutoMapperRepositoryConfiguration.Configure();
         }
         

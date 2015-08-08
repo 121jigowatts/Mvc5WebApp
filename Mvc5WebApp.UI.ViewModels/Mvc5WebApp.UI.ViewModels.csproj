@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E9F25D0C-2A77-48E6-99F9-FE6B6EC8F59D}</ProjectGuid>
+    <ProjectGuid>{62A02741-FF65-465B-B0E8-59947DF96DB2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Mvc5WebApp.ServiceImplementations</RootNamespace>
-    <AssemblyName>Mvc5WebApp.ServiceImplementations</AssemblyName>
+    <RootNamespace>Mvc5WebApp.UI.ViewModels</RootNamespace>
+    <AssemblyName>Mvc5WebApp.UI.ViewModels</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -39,29 +39,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PeopleService.cs" />
+    <Compile Include="People\PeopleViewModel.cs" />
+    <Compile Include="People\PersonViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Mvc5App.Models\Mvc5WebApp.Models.csproj">
       <Project>{70e1cf9b-f3b6-46b0-acaa-2c49779e382f}</Project>
       <Name>Mvc5WebApp.Models</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Mvc5WebApp.Contracts\Mvc5WebApp.Contracts.csproj">
-      <Project>{c4405966-f48b-40ca-bc6e-ebd5b6adde51}</Project>
-      <Name>Mvc5WebApp.Contracts</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Mvc5WebApp.RepositoryInterfaces\Mvc5WebApp.RepositoryInterfaces.csproj">
-      <Project>{9a6c7058-42a1-49c2-894e-7d55f92d89b7}</Project>
-      <Name>Mvc5WebApp.RepositoryInterfaces</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Mvc5WebApp.ServiceInterfaces\Mvc5WebApp.ServiceInterfaces.csproj">
-      <Project>{82653d44-3bc0-4b04-96aa-77006a953f6a}</Project>
-      <Name>Mvc5WebApp.ServiceInterfaces</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Mvc5WebApp.UI.ViewModels\Mvc5WebApp.UI.ViewModels.csproj">
-      <Project>{62a02741-ff65-465b-b0e8-59947df96db2}</Project>
-      <Name>Mvc5WebApp.UI.ViewModels</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

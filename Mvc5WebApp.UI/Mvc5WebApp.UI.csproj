@@ -151,7 +151,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewModels\People\PeopleViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -190,6 +189,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\People\Index.cshtml" />
+    <Content Include="Views\People\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -231,6 +231,10 @@
     <ProjectReference Include="..\Mvc5WebApp.SQLServerRepositories\Mvc5WebApp.SQLServerRepositories.csproj">
       <Project>{7a2173ff-deaf-4962-9629-45b2447f18ab}</Project>
       <Name>Mvc5WebApp.SQLServerRepositories</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mvc5WebApp.UI.ViewModels\Mvc5WebApp.UI.ViewModels.csproj">
+      <Project>{62a02741-ff65-465b-b0e8-59947df96db2}</Project>
+      <Name>Mvc5WebApp.UI.ViewModels</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

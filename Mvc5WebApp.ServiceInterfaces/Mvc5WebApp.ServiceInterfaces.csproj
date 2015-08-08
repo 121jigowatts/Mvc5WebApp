@@ -47,6 +47,10 @@
       <Project>{70e1cf9b-f3b6-46b0-acaa-2c49779e382f}</Project>
       <Name>Mvc5WebApp.Models</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Mvc5WebApp.UI.ViewModels\Mvc5WebApp.UI.ViewModels.csproj">
+      <Project>{62a02741-ff65-465b-b0e8-59947df96db2}</Project>
+      <Name>Mvc5WebApp.UI.ViewModels</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

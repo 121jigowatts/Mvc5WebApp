@@ -1,4 +1,5 @@
 ﻿using Mvc5WebApp.Models;
+using Mvc5WebApp.UI.ViewModels.People;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,8 @@ namespace Mvc5WebApp.ServiceInterfaces
 {
     public interface IPeopleService
     {
-        IList<Person> Get();
+        PeopleViewModel Get();
+
+        PersonViewModel GetById(int id);
     }
 }

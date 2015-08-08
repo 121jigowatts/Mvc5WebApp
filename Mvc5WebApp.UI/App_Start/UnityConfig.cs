@@ -48,6 +48,12 @@ namespace Mvc5WebApp.UI.App_Start
             container.RegisterType<IObjectMapper, AutoMapperRepositoryConfiguration>();
             container.RegisterType<IPeopleRepository, PeopleRepository>();
             container.RegisterType<IPeopleService, PeopleService>();
+
+            container.RegisterInstance<IObjectMapper>("Services", new AutoMapperServicesConfiguration());
+            container.RegisterType<PeopleService>(new InjectionConstructor(
+                new ResolvedParameter<IPeopleRepository>(),
+                new ResolvedParameter<IObjectMapper>("Services")));
+
         }
     }
 }

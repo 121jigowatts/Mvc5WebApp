@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AutoMapperRepositoryConfiguration.cs" />
+    <Compile Include="AutoMapperServicesConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -65,6 +66,10 @@
     <ProjectReference Include="..\Mvc5WebApp.SQLServerRepositories\Mvc5WebApp.SQLServerRepositories.csproj">
       <Project>{7a2173ff-deaf-4962-9629-45b2447f18ab}</Project>
       <Name>Mvc5WebApp.SQLServerRepositories</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mvc5WebApp.UI.ViewModels\Mvc5WebApp.UI.ViewModels.csproj">
+      <Project>{62a02741-ff65-465b-b0e8-59947df96db2}</Project>
+      <Name>Mvc5WebApp.UI.ViewModels</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
